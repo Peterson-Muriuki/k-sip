@@ -6,9 +6,10 @@
 
 ## Overview
 
-K-SIP is a multi-module Streamlit application that simulates the intelligence system a Business Intelligence Manager would build at a PAYG solar/fintech company operating in Kenya. It was developed as a flagship portfolio project targeting senior BI and strategy roles in EA fintech.
+K-SIP is a multi-module Streamlit application that simulates the intelligence system a Business Intelligence Manager would build at a PAYG solar/fintech company operating in Kenya. 
+It was developed as a flagship portfolio project targeting senior BI and strategy roles in EA fintech.
 
-The platform covers all four pillars of strategic BI:
+The platform pillars of strategic BI:
 
 | Module | Pillar | What it does |
 |---|---|---|
@@ -19,18 +20,6 @@ The platform covers all four pillars of strategic BI:
 
 ---
 
-## Live Demo
-
-> Deploy to Streamlit Cloud in one click — see deployment section below.
-
----
-
-## Screenshots
-
-_Add screenshots of each module after first run_
-
----
-
 ## Tech Stack
 
 | Layer | Tools |
@@ -38,7 +27,7 @@ _Add screenshots of each module after first run_
 | Frontend | Streamlit |
 | Data & modelling | Python, Pandas, NumPy, scikit-learn |
 | Visualisation | Plotly |
-| AI synthesis | Ollama + Mistral (local) — falls back to rich demo mode |
+| AI synthesis | Ollama + Mistral |
 | Data | Synthetic PAYG portfolio + macro signals + competitor data |
 
 ---
@@ -61,54 +50,9 @@ k-sip/
 └── README.md
 ```
 
----
-
-## Quickstart
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/k-sip.git
-cd k-sip
-```
-
-### 2. Create virtual environment
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure environment
-```bash
-cp .env.example .env
-```
-
-The platform runs fully in demo mode without any API keys. To enable live AI briefs, install [Ollama](https://ollama.com) and run:
-```bash
-ollama pull mistral
-```
-
-### 5. Run the platform
-```bash
-streamlit run app.py
-```
-
-Open `http://localhost:8501` in your browser.
-
----
-
 ## AI Features
 
-K-SIP uses a local Ollama + Mistral setup for all AI synthesis. No cloud API keys required.
+K-SIP uses a local Ollama + Mistral setup for all AI synthesis. 
 
 | Feature | Location | What it generates |
 |---|---|---|
@@ -116,13 +60,12 @@ K-SIP uses a local Ollama + Mistral setup for all AI synthesis. No cloud API key
 | Competitor narrative | War Room → Scenario tab | How a named competitor would respond to a selected scenario |
 | KPI diagnosis | Diagnostics Board | Root cause + recommended action for any metric below target |
 
-**Demo mode:** If Ollama is not running, all AI features fall back to rich pre-built content so the platform remains fully functional for demos and presentations.
-
 ---
 
 ## Data
 
-All data is synthetically generated and does not represent any real company or individual. The synthetic datasets are calibrated to reflect realistic Kenya PAYG solar/fintech market dynamics:
+All data is synthetically generated and does not represent any real company or individual. 
+The synthetic datasets are calibrated to reflect realistic Kenya PAYG solar/fintech market dynamics:
 
 - **PAYG customer portfolio** — 1,200 customers across 15 counties, 5 product tiers, 4 income segments
 - **Macro signals** — 24 months of CBK rate, KES/USD, inflation, mobile money volume, credit growth
@@ -135,41 +78,34 @@ All data is synthetically generated and does not represent any real company or i
 
 ### Module 1 — Early Warning System
 
-Tracks the EA Fintech Risk Index (0–100 composite of KES depreciation, inflation, CBK rate, credit growth slowdown) against alert thresholds. Includes a regulatory event tracker with strategic implication notes for each CBK/EPRA/KRA development.
+Tracks the EA Fintech Risk Index (0–100 composite of KES depreciation, inflation, CBK rate, credit growth slowdown) against alert thresholds. 
+Includes a regulatory event tracker with strategic implication notes for each CBK/EPRA/KRA development.
 
 **Key outputs:** Risk index trend, signal decomposition, regulatory event feed with strategic implications
 
 ### Module 2 — Competitive War Room
 
-Profiles five EA PAYG and fintech competitors by customer base, pricing, churn, and strategic intent. The scenario war-game engine lets you select any macro/regulatory scenario and generate an AI narrative of how a named competitor would respond and what pre-emptive action M-KOPA should take. The whitespace map identifies counties with low PAYG penetration and large addressable markets.
+Profiles five EA PAYG and fintech competitors by customer base, pricing, churn, and strategic intent. 
+The scenario war-game engine lets you select any macro/regulatory scenario and generate an AI narrative of how a named competitor would respond and what pre-emptive action M-KOPA should take. 
+The whitespace map identifies counties with low PAYG penetration and large addressable markets.
 
 **Key outputs:** Competitor scatter plot, war-game AI narratives, whitespace opportunity table
 
 ### Module 3 — Customer Intelligence Engine
 
-Segments 1,200 synthetic PAYG customers by income band and analyses unit economics per segment. The LTV/CAC modeler lets you adjust price, CAC, and payment rate assumptions and see the impact on the LTV curve in real time. A Gradient Boosting churn model identifies high-risk accounts with a probability score. Pricing sensitivity analysis models revenue impact of price changes per segment using demand elasticity assumptions calibrated to Kenya.
+Segments 1,200 synthetic PAYG customers by income band and analyses unit economics per segment. 
+The LTV/CAC modeler lets you adjust price, CAC, and payment rate assumptions and see the impact on the LTV curve in real time. 
+A Gradient Boosting churn model identifies high-risk accounts with a probability score. 
+Pricing sensitivity analysis models revenue impact of price changes per segment using demand elasticity assumptions calibrated to Kenya.
 
 **Key outputs:** Segment net economics, LTV/CAC modeler, churn intervention list, pricing sensitivity curves
 
 ### Module 4 — Strategic Performance Diagnostics Board
 
-Goes beyond reporting numbers — every KPI has an actual vs target comparison with a visual bar, and underperforming KPIs have a one-click AI diagnosis that identifies root cause and recommends a specific action with owner and timeline. Leading indicator trends (mobile money volume, credit growth) provide forward-looking context.
+Goes beyond reporting numbers; every KPI has an actual vs target comparison with a visual bar, and underperforming KPIs have a one-click AI diagnosis that identifies root cause and recommends a specific action with owner and timeline. 
+Leading indicator trends (mobile money volume, credit growth) provide forward-looking context.
 
 **Key outputs:** KPI diagnostic bars, AI variance explanations, leading indicator trends, recommended action table
-
----
-
-## Deployment (Streamlit Cloud)
-
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub account
-4. Select `k-sip` repo, branch `main`, main file `app.py`
-5. Deploy
-
-> Note: AI features will run in demo mode on Streamlit Cloud since Ollama requires a local runtime. All four modules and all charts are fully functional without Ollama.
-
----
 
 ## Roadmap
 
@@ -187,9 +123,9 @@ Goes beyond reporting numbers — every KPI has an actual vs target comparison w
 Data Analyst · Business Analyst · AI Engineer · Financial Engineer
 
 - Email: pitmuriuki@gmail.com
-- LinkedIn: [linkedin.com/in/peterson-muriuki](https://linkedin.com/in/peterson-muriuki)
-- GitHub: [github.com/Peterson-Muriuki](https://github.com/Peterson-Muriuki)
-- MSc Financial Engineering — WorldQuant University (ongoing)
+- LinkedIn: [linkedin.com/in/peterson-muriuki]([https://linkedin.com/in/peterson-muriuki](https://www.linkedin.com/in/peterson-muriuki-5857aaa9/))
+- GitHub: [github.com/Peterson-Muriuki]([https://github.com/Peterson-Muriuki](https://github.com/Peterson-Muriuki))
+- MSc Financial Engineering — WorldQuant University 
 
 ---
 
@@ -211,4 +147,4 @@ MIT License — free to use, fork, and build on with attribution.
 
 ---
 
-_Built to demonstrate what strategic BI looks like when it goes beyond dashboards — proactive intelligence, competitive foresight, and AI-generated recommendations._"# k-sip" 
+_Built to demonstrate what strategic BI looks like when it goes beyond dashboards - proactive intelligence, competitive foresight, and AI-generated recommendations._"# k-sip" 
