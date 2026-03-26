@@ -123,8 +123,8 @@ Leading indicator trends (mobile money volume, credit growth) provide forward-lo
 Data Analyst · Business Analyst · AI Engineer · Financial Engineer
 
 - Email: pitmuriuki@gmail.com
-- LinkedIn: [linkedin.com/in/peterson-muriuki]([https://linkedin.com/in/peterson-muriuki](https://www.linkedin.com/in/peterson-muriuki-5857aaa9/))
-- GitHub: [github.com/Peterson-Muriuki]([https://github.com/Peterson-Muriuki](https://github.com/Peterson-Muriuki))
+- LinkedIn: ([https://linkedin.com/in/peterson-muriuki](https://www.linkedin.com/in/peterson-muriuki-5857aaa9/))
+- GitHub: ([https://github.com/Peterson-Muriuki](https://github.com/Peterson-Muriuki))
 - MSc Financial Engineering — WorldQuant University 
 
 ---
