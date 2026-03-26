@@ -1,4 +1,4 @@
-# K-SIP — Kenya Strategic Intelligence Platform
+# K-SIP : Kenya Strategic Intelligence Platform
 
 > A portfolio-grade business intelligence platform built to demonstrate strategic analytics, competitive intelligence, and AI-powered decision support for East African fintech leadership roles.
 
@@ -35,12 +35,12 @@ The platform pillars of strategic BI:
 ## Project Structure
 ```
 k-sip/
-├── app.py                          # Home — platform overview + AI strategic brief
+├── app.py                          # Home - platform overview + AI strategic brief
 ├── pages/
-│   ├── 1_Early_Warning.py          # Module 1 — EA fintech risk index + regulatory tracker
-│   ├── 2_War_Room.py               # Module 2 — competitor profiles + scenario war-game
-│   ├── 3_Customer_Intelligence.py  # Module 3 — PAYG economics + churn + pricing
-│   └── 4_Diagnostics_Board.py      # Module 4 — KPI diagnostics + action recommendations
+│   ├── 1_Early_Warning.py          # Module 1 - EA fintech risk index + regulatory tracker
+│   ├── 2_War_Room.py               # Module 2 - competitor profiles + scenario war-game
+│   ├── 3_Customer_Intelligence.py  # Module 3 - PAYG economics + churn + pricing
+│   └── 4_Diagnostics_Board.py      # Module 4 - KPI diagnostics + action recommendations
 ├── utils/
 │   ├── data_generator.py           # Synthetic PAYG portfolio, macro signals, competitor data
 │   └── ai_synthesis.py             # Ollama/Mistral AI calls with demo fallback
@@ -67,23 +67,23 @@ K-SIP uses a local Ollama + Mistral setup for all AI synthesis.
 All data is synthetically generated and does not represent any real company or individual. 
 The synthetic datasets are calibrated to reflect realistic Kenya PAYG solar/fintech market dynamics:
 
-- **PAYG customer portfolio** — 1,200 customers across 15 counties, 5 product tiers, 4 income segments
-- **Macro signals** — 24 months of CBK rate, KES/USD, inflation, mobile money volume, credit growth
-- **Competitor profiles** — 5 EA PAYG/fintech players with strategic intent and vulnerability mapping
-- **Regulatory events** — 8 CBK/EPRA/KRA events with strategic implication analysis
+- **PAYG customer portfolio** - 1,200 customers across 15 counties, 5 product tiers, 4 income segments
+- **Macro signals** - 24 months of CBK rate, KES/USD, inflation, mobile money volume, credit growth
+- **Competitor profiles** - 5 EA PAYG/fintech players with strategic intent and vulnerability mapping
+- **Regulatory events** - 8 CBK/EPRA/KRA events with strategic implication analysis
 
 ---
 
 ## Module Detail
 
-### Module 1 — Early Warning System
+### Module 1 : Early Warning System
 
 Tracks the EA Fintech Risk Index (0–100 composite of KES depreciation, inflation, CBK rate, credit growth slowdown) against alert thresholds. 
 Includes a regulatory event tracker with strategic implication notes for each CBK/EPRA/KRA development.
 
 **Key outputs:** Risk index trend, signal decomposition, regulatory event feed with strategic implications
 
-### Module 2 — Competitive War Room
+### Module 2 : Competitive War Room
 
 Profiles five EA PAYG and fintech competitors by customer base, pricing, churn, and strategic intent. 
 The scenario war-game engine lets you select any macro/regulatory scenario and generate an AI narrative of how a named competitor would respond and what pre-emptive action M-KOPA should take. 
@@ -91,7 +91,7 @@ The whitespace map identifies counties with low PAYG penetration and large addre
 
 **Key outputs:** Competitor scatter plot, war-game AI narratives, whitespace opportunity table
 
-### Module 3 — Customer Intelligence Engine
+### Module 3 : Customer Intelligence Engine
 
 Segments 1,200 synthetic PAYG customers by income band and analyses unit economics per segment. 
 The LTV/CAC modeler lets you adjust price, CAC, and payment rate assumptions and see the impact on the LTV curve in real time. 
@@ -100,7 +100,7 @@ Pricing sensitivity analysis models revenue impact of price changes per segment 
 
 **Key outputs:** Segment net economics, LTV/CAC modeler, churn intervention list, pricing sensitivity curves
 
-### Module 4 — Strategic Performance Diagnostics Board
+### Module 4 : Strategic Performance Diagnostics Board
 
 Goes beyond reporting numbers; every KPI has an actual vs target comparison with a visual bar, and underperforming KPIs have a one-click AI diagnosis that identifies root cause and recommends a specific action with owner and timeline. 
 Leading indicator trends (mobile money volume, credit growth) provide forward-looking context.
@@ -143,7 +143,7 @@ Data Analyst · Business Analyst · AI Engineer · Financial Engineer
 
 ## License
 
-MIT License — free to use, fork, and build on with attribution.
+MIT License - free to use, fork, and build on with attribution.
 
 ---
 
